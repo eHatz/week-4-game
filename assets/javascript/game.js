@@ -1,28 +1,28 @@
+var char1 = {
+	name: "Obi",
+	health: 150,
+}
+
+
 $( document ).ready(function() {
 
-	var obiButt = $('<button>');
-	obiButt.data('let', 'Obi\'s Butt');
-	obiButt.text('Obi-Wan Kanobi');
-	$("#buttons").append(obiButt); 
-	var obiButt1 = $('<button>');
-	obiButt1.data('let', 'Obi\'s Butt');
-	obiButt1.text('Obi-Wan Kanobi');
-	$("#buttons").append(obiButt1); 
+	// var obiButt = $('<button>');
+	// obiButt.data('let', 'Obi\'s Butt');
+	// obiButt.text(' Obi-Wan Kanobi');
+	// $("#buttons").append(obiButt); 
 
-
-
-	(obiButt).on('click', function() {
-		var word = "Obi-Wan Kanobi";
+	$('#character1').on('click', function() {
+		
 
 		/* Step 5: append the fridgeMagnet variable to the element with an id of display */
-		$("#yourChar").append(word);
+		$("#yourChar").append(char1.name);
 		//alert('watch this')
 	});
-	(obiButt1).on('click', function() {
-		var word = "Obi-Wan Kanobi";
+	// (obiButt1).on('click', function() {
+	// 	var word = "Obi-Wan Kanobi";
 
-		/* Step 5: append the fridgeMagnet variable to the element with an id of display */
-		$("#yourChar").append(word);
-		//alert('watch this')
-	});
+	// 	 Step 5: append the fridgeMagnet variable to the element with an id of display 
+	// 	$("#yourChar").append(word);
+	// 	//alert('watch this')
+	// });
 });
