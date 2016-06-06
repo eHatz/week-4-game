@@ -51,12 +51,17 @@ $( document ).ready(function() {
 				}
 			}
 			defendChar = this;
+			document.querySelector('#messages').innerHTML = "";
 		});
 	
 	});
-
+	var attackerHP = charStats[charactersArr.index(attacker)].health;
 	$('.attackBtn').on('click', function() {
-		
+		if (defendChar !== undefined) {
+
+		} else {
+			document.querySelector('#messages').innerHTML = "No enemy has been selected";
+		}
 	});
 
 });
