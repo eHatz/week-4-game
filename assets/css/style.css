@@ -1,6 +1,11 @@
-#character1{
+#character1, #character2, #character3, #character4{
 
 	width: 200px;
-	height: 200px;
-	background: url('../../man6.png');
+
+	/*background: url('../images/obiwan.jpg');*/
+}
+
+h3{
+	text-align: center;
+	font-size: 15px;
 }
