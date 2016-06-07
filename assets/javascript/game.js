@@ -49,11 +49,11 @@ $( document ).ready(function() {
 		attackChar = pickAttacker; // attackChar becomes defined
 		attackHp = charStats[charactersArr.index(attackChar)].health;// health lsited in object
 		attackDmg = charStats[charactersArr.index(attackChar)].damage; //damage listed in object
-		enemiesArr = $('.enemies');
+		enemiesArr = $('.enemies');// array of enemy divs
 	});
 
-		 // array of enemy divs
-	$('.enemies').on('click', function() { // selects the divs from enemies available to attack
+		 
+	$('.row').on('click', ".enemies", function() { // selects the divs from enemies available to attack
 		for (var j = 0; j < enemiesArr.length; j++) {  // run through the list of enemy array
 
 			if (enemiesArr[j] === this && defendChar === undefined) {
